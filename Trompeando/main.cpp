@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp>
+#include "SFML/Graphics.hpp"
 #include "Trompo.h"
 #include "TrompoP1.h"
 #include "TrompoP2.h"
