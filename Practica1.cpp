@@ -181,6 +181,12 @@ private:
     Fecha fechaIngreso;
 
 public:
+    Empleado (){
+        categoria = 0;
+        sueldo = 0;
+        fechaIngreso = Fecha();
+    }
+
     int getCategoria(){return categoria;}
     float getSueldo(){return sueldo;}
     Fecha getFechaIngreso(){return fechaIngreso;}
@@ -189,17 +195,67 @@ public:
     void setSueldo(float s){ sueldo = s;}
     void setFechaIngreso(Fecha ingreso){fechaIngreso = ingreso;}
 
+};
 
+///CLASE PROVEEDOR
+
+class Proveedor : public Persona
+{
+private:
+    int CUIL;
+    int tipoProducto;
+    char condicionPago;
+
+public:
+    Proveedor (){
+        CUIL = 0;
+        tipoProducto = 0;
+        condicionPago = 'x';
+    }
+
+    int getCuil (){return CUIL;}
+    int getTipoProducto(){return tipoProducto;}
+    char getCondicionPago(){return condicionPago;}
+
+    void setCuil (int cuil){ CUIL = cuil;}
+    void setTipoProducto (int prod){ tipoProducto = prod;}
+    void  setCondicionPago (char cond ){condicionPago = cond;}
+
+};
+
+///CLASE DOCENTE
+
+class Docente : public Persona
+{
+private:
+    int legajo;
+    char cargo [15];
+    Fecha fechaIngreso;
+
+public:
+    Docente(){
+        legajo = 0;
+        cargo[15] = {};
+        fechaIngreso = Fecha();
+    }
+
+    int getLegajo(){return legajo;}
+    const char* getCargo(){return cargo;}
+    Fecha getFechaIngreso(){return fechaIngreso;}
+
+    void setLegajo(int leg){ legajo = leg;}
+    void setCargo (const char* car){strcpy (cargo, car);}
+    void setFechaIngreso(Fecha ingreso){ fechaIngreso = ingreso;}
 };
 
 int main()
 {
     Persona P1;
-    //P1.Cargar();
-    //P1.Mostrar();
+    P1.Cargar();
+    P1.Mostrar();
     Empleado E1;
     E1.setCategoria(2);
-    E1.getCategoria();
+    cout << E1.getCategoria();
 
 
 
