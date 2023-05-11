@@ -3,6 +3,23 @@
 #include <cstring>
 using namespace std;
 
+///FUNCION GLOBAL CARGAR CADENA
+
+void cargarCadena(char *pal, int tam);
+
+void cargarCadena(char *pal, int tam)
+{
+    int i;
+    fflush(stdin);
+    for(i=0; i<tam; i++)
+    {
+        pal[i]=cin.get();
+        if(pal[i]=='\n') break;
+    }
+    pal[i]='\0';
+    fflush(stdin);
+}
+
 ///CLASE FECHA
 class Fecha
 {
@@ -60,29 +77,11 @@ void Fecha::Mostrar()
     cout<<dia<<"/"<<mes<<"/"<<anio<<endl;
 }
 
-///FUNCION GLOBAL CARGAR CADENA
-
-void cargarCadena(char *pal, int tam);
-
-void cargarCadena(char *pal, int tam)
-{
-    int i;
-    fflush(stdin);
-    for(i=0; i<tam; i++)
-    {
-        pal[i]=cin.get();
-        if(pal[i]=='\n') break;
-    }
-    pal[i]='\0';
-    fflush(stdin);
-}
-
-
-
+///CLASE PERSONA
 
 class Persona
 {
-private:
+protected:
     int DNI;
     Fecha fechadenacimiento;
     char nombre[25];
@@ -172,12 +171,35 @@ void Persona::Mostrar()
     cout<<"EMAIL    : "<<email<<endl;
 }
 
+///CLASE EMPLEADO
+
+class Empleado : public Persona
+{
+private:
+    int categoria;
+    float sueldo;
+    Fecha fechaIngreso;
+
+public:
+    int getCategoria(){return categoria;}
+    float getSueldo(){return sueldo;}
+    Fecha getFechaIngreso(){return fechaIngreso;}
+
+    void setCategoria(int cat){ categoria = cat;}
+    void setSueldo(float s){ sueldo = s;}
+    void setFechaIngreso(Fecha ingreso){fechaIngreso = ingreso;}
+
+
+};
+
 int main()
 {
     Persona P1;
-
-    P1.Cargar();
-    P1.Mostrar();
+    //P1.Cargar();
+    //P1.Mostrar();
+    Empleado E1;
+    E1.setCategoria(2);
+    E1.getCategoria();
 
 
 
