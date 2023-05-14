@@ -205,6 +205,31 @@ bool MostrarArchivo(){
 
 }
 
+void buscarCliente(){
+    int dni;
+    cout<< "Ingrese DNI del cliente a buscar: " ;
+    cin >> dni;
+
+    Cliente C2;
+    FILE *p;
+
+    p = fopen("Cliente.dat","rb");
+    if(p==NULL){
+        return;
+    }
+    while (fread(&C2, sizeof(Cliente), 1, p) == 1){
+        if(C2.getDNI() == dni){
+           C2.Mostrar1();
+            fclose(p);
+            return;
+        }
+    }
+    fclose(p);
+    cout << "No existe el cliente" << endl;
+}
+
+
+
 
 int main(){
 
@@ -214,7 +239,7 @@ int main(){
 
         cout<<"OPCION 1 : CARGAR CLIENTE"<<endl;
         cout<<"OPCION 2 : MOSTRAR CLIENTE"<<endl;
-        cout<<"OPCION 3 : MODIFICAR CLIENTE"<<endl;
+        cout<<"OPCION 3 : BUSCAR CLIENTE"<<endl;
         cout<<"OPCION 4 : USAR EL CLIENTE"<<endl;
         cout<<"OPCION 0 : SALIR"<<endl;
 
@@ -235,6 +260,7 @@ int main(){
               break;
 
             case 3://MODIFICAR EL ARCHIVO.
+                buscarCliente();
               break;
 
             case 4://USAR EL ARCHIVO.
