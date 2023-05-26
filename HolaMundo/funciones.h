@@ -2,7 +2,7 @@
 #include "Ciudad.h"
 #include "Pais.h"
 
-void BuscarPais (const char *cod);
-
+void BuscarPais ();
+void cargarCadena(char *pal, int tam);
 
 

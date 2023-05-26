@@ -4,35 +4,49 @@
 
 using namespace std;
 
-void BuscarPais (const char *cod)
+void cargarCadena(char *pal, int tam)
 {
-    /*char cod [4];
+    int i;
+    fflush(stdin);
+    for(i=0; i<tam; i++)
+    {
+        pal[i]=cin.get();
+        if(pal[i]=='\n') break;
+    }
+    pal[i]='\0';
+    fflush(stdin);
+}
 
-    cin.ignore();
-    cout << "Ingrese el codigo de pais a buscar: "<< endl;
-    cin.getline(cod,3);*/
+void BuscarPais ()
+{
+    char CODIGO[4];
+    cargarCadena(CODIGO,3);
 
     FILE *p;
     Pais paisito;
+
 
     p = fopen("paises.dat", "rb");
 
     if(p==NULL)
     {
-        return ;
+        return;
     }
 
-    while ( fread (&paisito, sizeof(Pais), 1, p) == 1)
+    while (fread (&paisito, sizeof(Pais), 1, p) == 1)
     {
-        if ( strcmp (paisito.getCodigo(), cod) == 0){
+        if (strcmp (paisito.getCodigo(),CODIGO) == 0){
+
             cout << "esta" << endl;
             fclose(p);
+            return;
+
         }
 
     }
+    fclose(p);
     cout << "no esta" << endl;
-
-fclose(p);
+    return ;
 
 }
 

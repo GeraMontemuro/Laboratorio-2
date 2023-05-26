@@ -24,7 +24,7 @@ do{
     switch (opcion){
 
     case 1:
-        BuscarPais("ARG");
+        BuscarPais();
 
         break;
 
