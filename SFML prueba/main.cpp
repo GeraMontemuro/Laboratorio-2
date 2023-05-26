@@ -1,5 +1,5 @@
+#include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
-
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
@@ -12,6 +12,13 @@ int main()
     sf::CircleShape shapeSegundo(40);
     shapeSegundo.setFillColor(sf::Color::Magenta);
     shapeSegundo.setPosition(500, 500);
+
+    sf::SoundBuffer buffer;
+    buffer.loadFromFile("cancioncita.wav");
+
+    sf::Sound sound;
+    sound.setBuffer(buffer);
+    sound.play();
 
     while (window.isOpen())
     {

@@ -76,6 +76,35 @@ void Fecha::Mostrar()
     cout<<dia<<"/"<<mes<<"/"<<anio<<endl;
 }
 
+class FiguraGeometrica{
+protected:
+    int DNI;
+    Fecha fechadenacimiento;
+    char nombre[25];
+    char apellido[25];
+    char email[25];
+    char telefono[20];
+
+public:
+
+    void Mostrar();
+    void Cargar();
+};
+
+class Circulo : public FiguraGeometrica
+{
+
+    private:
+      float radio;
+
+    public:
+
+      float getRadio(){return radio;}
+
+
+      void setRadio(float r){radio = r;}
+
+};
 ///CLASE PERSONA
 
 class Persona
