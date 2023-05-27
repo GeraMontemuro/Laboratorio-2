@@ -15,7 +15,6 @@ class Pais{
         int _capital;
     public:
         void mostrar();
-        void cargar();
 
         void setCodigo(const char *);
         void setCodigo2(const char *);
