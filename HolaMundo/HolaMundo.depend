@@ -40,15 +40,16 @@
 
 1682989086 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\ciudad.h
 
-1685137321 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.cpp
+1685198678 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.cpp
 	"Pais.h"
 	<cstring>
 	<cstdio>
 	<iostream>
+	"funciones.h"
 
-1685137321 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.h
+1685198550 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.h
 
-1685196792 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\main.cpp
+1685204307 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\main.cpp
 	<iostream>
 	<cstring>
 	<cstdio>
@@ -57,11 +58,11 @@
 	"Ciudad.h"
 	"funciones.h"
 
-1685144937 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.h
+1685204324 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.h
 	"Ciudad.h"
 	"Pais.h"
 
-1685196392 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.cpp
+1685204307 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.cpp
 	"funciones.h"
 	<iostream>
 	<cstring>

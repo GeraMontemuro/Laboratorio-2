@@ -21,6 +21,7 @@ do{
     cout << "2 -  AGREGAR PAIS  "       << endl;
     cout << "3 -  LISTAR PAISES" << endl;
     cout << "4 -  LISTAR CIUDADES Y POBLACIONES DE UN PAIS" << endl;
+    cout << "5 -  LISTAR PAISES POR SUPERFICIE" << endl;
 
     cout << "0 -  SALIR" << endl << endl;
 
@@ -31,20 +32,43 @@ do{
     switch (opcion){
 
     case 1:
-        BuscarPais();
-        system("pause");
+        char CODIGO[4];
+        Pais p;
+
+        cout << "Ingrese el código del país a buscar:  ";
+        cargarCadena(CODIGO,3);
+        cout << endl;
+
+        p = BuscarPais(CODIGO);
+        if (p.getSuperficie()>0){
+            cout << "El pais existe." << endl;
+        }
+        else {
+            cout << "no" << endl;
+        }
+
         break;
 
     case 2:
+        Pais p1;
+        p1.cargar();
+        AgregarPais(p1);
+
         break;
 
     case 3:
+        ListarPaises(0);
         break;
 
     case 4:
+        ListarCiudadxPais();
+        break;
+    case 5:
+        ListarPaises(1);
         break;
 
     }
+
 }while(opcion !=0);
 
     return 0;
