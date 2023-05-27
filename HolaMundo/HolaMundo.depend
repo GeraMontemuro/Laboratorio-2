@@ -67,3 +67,38 @@
 	<iostream>
 	<cstring>
 
+1685214011 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\ciudad.cpp
+	"Ciudad.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1685214011 c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\ciudad.h
+
+1685217056 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<cstring>
+
+1685216601 c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\funciones.h
+	"Ciudad.h"
+	"Pais.h"
+
+1685215148 c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\pais.h
+
+1685214011 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<locale.h>
+	"Pais.h"
+	"Ciudad.h"
+	"funciones.h"
+
+1685215174 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+	"funciones.h"
+

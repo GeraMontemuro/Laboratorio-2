@@ -70,42 +70,47 @@ void AgregarPais (Pais pa){
 
 void ListarPaises (bool punto){
 
+    float Porcentaje=0;
+
+
+
     FILE *p;
     Pais ps;
-    float acuSuperficie=0;
-    float porcSuperficie = 0;
-
-
     p = fopen("paises.dat", "rb");
 
     if(p==NULL)
     {
-        return;
+      return;
     }
-
     while (fread (&ps, sizeof(Pais), 1, p) == 1){
-        if(punto){
-        ps.mostrar();
-        }
-        else{
-            for(int i=0; i<2; i++){
-                if(i==0){
-                acuSuperficie = ps.getSuperficie();
-               //fclose(p);
-                }
-                else{
-                  cout << ps.getNombre() << "  "  << ps.getSuperficie() << endl;
-                    porcSuperficie = (ps.getSuperficie() / acuSuperficie) *100;
-                    cout << porcSuperficie << endl;
-                }
-            }
-           // fclose(p);
-        }
+      if(punto){
+      ps.mostrar();}
+      else{
+      Porcentaje=(ps.getSuperficie()/AcumuladorSuperficie())*100;
+      cout<<"El porcentaje del pais:"<<ps.getNombre()<<" es %"<<Porcentaje<<endl;
+      }
     }
-        fclose(p);
-}
+    fclose(p);
+  }
+float AcumuladorSuperficie(){
 
-void ListarCiudadxPais(){
+    float Acumula=0;
+    FILE *p;
+    Pais ps;
+    p = fopen("paises.dat", "rb");
+
+    if(p==NULL)
+    {
+      return 0;
+    }
+    while (fread (&ps, sizeof(Pais), 1, p) == 1){
+      Acumula+=ps.getSuperficie();
+    }
+    return Acumula;
+  }
+
+
+  void ListarCiudadxPais(){
 
     char id[4];
     bool pais;
@@ -129,6 +134,7 @@ void ListarCiudadxPais(){
         }
     }
     fclose(c);
+    cout<<"No existen ciudades para ese codigo de pais"<<endl;
 
 
     if(pais){

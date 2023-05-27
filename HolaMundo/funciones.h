@@ -7,5 +7,6 @@ void cargarCadena(char *pal, int tam);
 void AgregarPais (Pais pa);
 void ListarPaises (bool punto);
 void ListarCiudadxPais();
+float AcumuladorSuperficie();
 
 

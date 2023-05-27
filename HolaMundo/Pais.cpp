@@ -2,11 +2,34 @@
 #include <cstring>
 #include <cstdio>
 #include <iostream>
+#include "funciones.h"
 using namespace std;
+
 
 void Pais::mostrar(){
     cout << _codigo << " " << _codigo2 << " " << _nombre << " " << _continente << " " << _superficie << " ";
     cout << _poblacion << " " << _independencia << " " << _expectativaDeVida << " " << _capital << endl;
+}
+void Pais::cargar(){
+  cout << "Ingrese Codigo de Pais ";
+  cargarCadena(_codigo,3);
+  cout << "Ingrese Codigo de Pais ";
+  cargarCadena(_codigo2,2);
+  cout << "Ingrese Nombre del Pais ";
+  cargarCadena(_nombre,44);
+  cout << "Ingrese Continente del Pais ";
+  cargarCadena(_continente,19);
+  cout << "Ingrese Superficie del Pais ";
+  cin >>_superficie;
+  cout << "Ingrese Poblacion del Pais ";
+  cin >>_poblacion;
+  cout << "Ingrese año de Independencia ";
+  cin >>_independencia;
+  cout << "Ingrese expectativa de vida ";
+  cin >>_expectativaDeVida;
+  cout << "Ingrese capital ";
+  cin >>_capital;
+
 }
 void Pais::setCodigo(const char *codigo){
     strcpy(_codigo, codigo);
