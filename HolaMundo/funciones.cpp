@@ -68,7 +68,7 @@ void AgregarPais (Pais pa){
     fclose(p);
 }
 
-void ListarPaises (int punto){
+void ListarPaises (bool punto){
 
     FILE *p;
     Pais ps;
@@ -83,30 +83,26 @@ void ListarPaises (int punto){
         return;
     }
 
-    for(int i=0; i<2; i++){
-        if(i==0){
-            while (fread (&ps, sizeof(Pais), 1, p) == 1){
-                acuSuperficie = ps.getSuperficie();
-                fclose(p);
-                return;
-            }
+    while (fread (&ps, sizeof(Pais), 1, p) == 1){
+        if(punto){
+        ps.mostrar();
         }
         else{
-            while (fread (&ps, sizeof(Pais), 1, p) == 1){
-                if(punto == 0){
-                    ps.mostrar();
-                    return;
-
+            for(int i=0; i<2; i++){
+                if(i==0){
+                acuSuperficie = ps.getSuperficie();
+               //fclose(p);
                 }
                 else{
-                    cout << ps.getNombre() << "  "  << ps.getSuperficie() << endl;
+                  cout << ps.getNombre() << "  "  << ps.getSuperficie() << endl;
                     porcSuperficie = (ps.getSuperficie() / acuSuperficie) *100;
                     cout << porcSuperficie << endl;
                 }
             }
-            fclose(p);
+           // fclose(p);
         }
     }
+        fclose(p);
 }
 
 void ListarCiudadxPais(){

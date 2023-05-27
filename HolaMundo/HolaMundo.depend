@@ -49,7 +49,7 @@
 
 1685198550 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.h
 
-1685204307 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\main.cpp
+1685206916 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\main.cpp
 	<iostream>
 	<cstring>
 	<cstdio>
@@ -58,7 +58,7 @@
 	"Ciudad.h"
 	"funciones.h"
 
-1685204324 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.h
+1685206916 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.h
 	"Ciudad.h"
 	"Pais.h"
 

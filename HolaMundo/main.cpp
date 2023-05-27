@@ -57,14 +57,14 @@ do{
         break;
 
     case 3:
-        ListarPaises(0);
+        ListarPaises(true);
         break;
 
     case 4:
         ListarCiudadxPais();
         break;
     case 5:
-        ListarPaises(1);
+        ListarPaises(false);
         break;
 
     }
