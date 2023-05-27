@@ -32,3 +32,37 @@
 	"Ciudad.h"
 	"Pais.h"
 
+1682989086 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\ciudad.cpp
+	"Ciudad.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1682989086 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\ciudad.h
+
+1685137321 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1685137321 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.h
+
+1685196792 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<locale.h>
+	"Pais.h"
+	"Ciudad.h"
+	"funciones.h"
+
+1685144937 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.h
+	"Ciudad.h"
+	"Pais.h"
+
+1685196392 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<cstring>
+

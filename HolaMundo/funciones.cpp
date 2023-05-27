@@ -20,11 +20,13 @@ void cargarCadena(char *pal, int tam)
 void BuscarPais ()
 {
     char CODIGO[4];
+
+    cout << "Ingrese el código del país a buscar:  ";
     cargarCadena(CODIGO,3);
+    cout << endl;
 
     FILE *p;
     Pais paisito;
-
 
     p = fopen("paises.dat", "rb");
 
@@ -35,19 +37,17 @@ void BuscarPais ()
 
     while (fread (&paisito, sizeof(Pais), 1, p) == 1)
     {
-        if (strcmp (paisito.getCodigo(),CODIGO) == 0){
-
-            cout << "esta" << endl;
+        if (strcmp (paisito.getCodigo(),CODIGO) == 0)
+        {
+            cout << "El país existe en la base de datos." << endl << endl;
             fclose(p);
             return;
-
         }
 
     }
     fclose(p);
-    cout << "no esta" << endl;
+    cout << "El país no se encuentra en la base de datos." << endl << endl;
     return ;
-
 }
 
 
