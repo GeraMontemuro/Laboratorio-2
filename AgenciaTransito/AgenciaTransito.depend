@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1684280746 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\agente.cpp
+	"Agente.h"
+	<cstring>
+
+1684359900 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\agente.h
+	<string>
+
+1684280862 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\agentearchivo.cpp
+	"AgenteArchivo.h"
+	<cstdio>
+
+1684280914 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\agentearchivo.h
+	"Agente.h"
+	<string>
+
+1683846750 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\fecha.cpp
+	<string>
+	"Fecha.h"
+
+1684279156 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\fecha.h
+	<string>
+
+1684279694 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\multa.cpp
+	"Multa.h"
+	<string>
+	<cstring>
+
+1684280324 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\multa.h
+	<string>
+	"Fecha.h"
+
+1684279680 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\multaarchivo.cpp
+	"MultaArchivo.h"
+	<cstdio>
+
+1684278570 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\multaarchivo.h
+	"Multa.h"
+	<string>
+
+1684279772 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\multamanager.cpp
+	<iostream>
+	"MultaManager.h"
+
+1684278992 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\multamanager.h
+	"Multa.h"
+	"MultaArchivo.h"
+
+1685292637 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\main.cpp
+	<iostream>
+	"ModeloParcial.h"
+
+1685292587 source:c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\modeloparcial.cpp
+	"ModeloParcial.h"
+
+1685299700 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\modeloparcial.h
+
