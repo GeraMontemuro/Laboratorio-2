@@ -1,0 +1,140 @@
+# depslib dependency file v1.0
+1682989086 source:c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\ciudad.cpp
+	"Ciudad.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1682989086 c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\ciudad.h
+
+1685142824 source:c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	"Pais.h"
+	"Ciudad.h"
+	"funciones.h"
+
+1685137321 c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\pais.h
+
+1685137321 source:c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1685142880 source:c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<cstring>
+
+1685142219 c:\users\usuario\onedrive\documentos\github\labo2\archivos\parte 1\holamundo\funciones.h
+	"Ciudad.h"
+	"Pais.h"
+
+1682989086 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\ciudad.cpp
+	"Ciudad.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1682989086 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\ciudad.h
+
+1685198678 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+	"funciones.h"
+
+1685198550 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\pais.h
+
+1685206916 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<locale.h>
+	"Pais.h"
+	"Ciudad.h"
+	"funciones.h"
+
+1685206916 c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.h
+	"Ciudad.h"
+	"Pais.h"
+
+1685204307 source:c:\users\usuario\onedrive\documentos\github\laboratorio-2\holamundo\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<cstring>
+
+1685214011 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\ciudad.cpp
+	"Ciudad.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1685214011 c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\ciudad.h
+
+1685217056 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\funciones.cpp
+	"funciones.h"
+	<iostream>
+	<cstring>
+
+1685216601 c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\funciones.h
+	"Ciudad.h"
+	"Pais.h"
+
+1685215148 c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\pais.h
+
+1685214011 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<locale.h>
+	"Pais.h"
+	"Ciudad.h"
+	"funciones.h"
+
+1685215174 source:c:\users\gmontemuro\documents\github\laboratorio-2\holamundo\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+	"funciones.h"
+
+1685234984 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\ciudad.cpp
+	"Ciudad.h"
+	"funciones.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+
+1685234958 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\ciudad.h
+
+1685215174 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\pais.cpp
+	"Pais.h"
+	<cstring>
+	<cstdio>
+	<iostream>
+	"funciones.h"
+
+1685215148 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\pais.h
+
+1685234958 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\main.cpp
+	<iostream>
+	<cstring>
+	<cstdio>
+	<locale.h>
+	"Pais.h"
+	"Ciudad.h"
+	"funciones.h"
+
+1685234958 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\funciones.h
+
+1685239117 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\holamundo v2\funciones.cpp
+	<iostream>
+	<cstdio>
+	"Pais.h"
+	"Ciudad.h"
+	<cstring>
+
