@@ -1,8 +1,10 @@
 #include "Agente.h"
 #include <cstring>
+#include <iostream>
+
 
 Agente::Agente(){
-  
+
 }
 
 Agente::Agente(int idAgente, std::string apellidos, std::string nombres, int anioIngreso, int categoria, float sueldo) {
@@ -64,4 +66,12 @@ void Agente::setCategoria(int categoria) {
 
 void Agente::setSueldo(float sueldo) {
   _sueldo = sueldo;
+}
+void Agente::mostrar(){
+ std::cout<<"ID AGENTE:";
+ std::cout<<_idAgente<<"  ";
+ std::cout<<"APELLIDO Y NOMBRE:";
+ std::cout<<_apellidos<<"  ";
+ std::cout<<_nombres<<"  ";
+
 }

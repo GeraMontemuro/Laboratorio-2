@@ -8,6 +8,8 @@ class ModeloParcial
 
     void Punto1();
     void Punto2();
+    void Punto3();
+    void Punto4();
 
 
 };

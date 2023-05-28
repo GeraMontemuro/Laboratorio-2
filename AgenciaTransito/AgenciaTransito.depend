@@ -55,3 +55,64 @@
 
 1685299700 c:\users\usuario\onedrive\documentos\utn programacion\laboratorio ii\agenciatransito\modeloparcial.h
 
+1685302656 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\agente.cpp
+	"Agente.h"
+	<cstring>
+	<iostream>
+
+1685302155 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\agente.h
+	<string>
+
+1685300906 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\agentearchivo.cpp
+	"AgenteArchivo.h"
+	<cstdio>
+
+1685300906 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\agentearchivo.h
+	"Agente.h"
+	<string>
+
+1685300906 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\fecha.cpp
+	<string>
+	"Fecha.h"
+
+1685300906 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\fecha.h
+	<string>
+
+1685305571 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\main.cpp
+	<iostream>
+	"ModeloParcial.h"
+
+1685305571 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\modeloparcial.h
+
+1685308610 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\modeloparcial.cpp
+	<iostream>
+	"ModeloParcial.h"
+	"AgenteArchivo.h"
+	"MultaArchivo.h"
+	"MultaManager.h"
+
+1685300906 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\multaarchivo.h
+	"Multa.h"
+	<string>
+
+1685300906 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\multa.h
+	<string>
+	"Fecha.h"
+
+1685300906 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\multa.cpp
+	"Multa.h"
+	<string>
+	<cstring>
+
+1685300906 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\multaarchivo.cpp
+	"MultaArchivo.h"
+	<cstdio>
+
+1685308732 source:c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\multamanager.cpp
+	<iostream>
+	"MultaManager.h"
+
+1685300906 c:\users\gmontemuro\documents\github\laboratorio-2\agenciatransito\multamanager.h
+	"Multa.h"
+	"MultaArchivo.h"
+

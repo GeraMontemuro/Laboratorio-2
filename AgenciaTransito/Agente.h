@@ -11,11 +11,11 @@ private:
   int _anioIngreso;
   int _categoria;
   float _sueldo;
-  
+
 public:
   Agente();
   Agente(int idAgente, std::string apellidos, std::string nombres, int anioIngreso, int categoria, float sueldo);
-  
+
   // Getters
   int getIdAgente();
   std::string getApellidos();
@@ -23,7 +23,7 @@ public:
   int getAnioIngreso();
   int getCategoria();
   float getSueldo();
-  
+
   // Setters
   void setIdAgente(int idAgente);
   void setApellidos(std::string apellidos);
@@ -31,6 +31,7 @@ public:
   void setAnioIngreso(int anioIngreso);
   void setCategoria(int categoria);
   void setSueldo(float sueldo);
+  void mostrar();
 };
 
 #endif

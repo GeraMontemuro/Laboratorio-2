@@ -4,7 +4,7 @@
 using namespace std;
 
 void MultaManager::Cargar() {
-  
+
   string patente;
   int idMulta;
   float monto;
@@ -14,39 +14,39 @@ void MultaManager::Cargar() {
   bool pagada;
   bool eliminado;
   int dia, mes, anio;
-  
+
   cout << "Ingrese los detalles de la multa:\n";
-  
+
   cout << "Patente: ";
   cin >> patente;
-  
+
   cout << "ID Multa: ";
   cin >> idMulta;
-  
+
   cout << "Fecha Multa: ";
   cin >> dia;
   cin >> mes;
   cin >> anio;
-  
+
   Fecha f(dia, mes, anio);
-  
+
   cout << "Monto: ";
   cin >> monto;
-  
+
   cout << "ID Agente: ";
   cin >> idAgente;
-  
+
   cout << "Tipo Infracción: ";
   cin >> tipoInfraccion;
-  
+
   cout << "ID Localidad: ";
   cin >> idLocalidad;
-  
+
   cout << "Pagada (1: Sí, 0: No): ";
   cin >> pagada;
-  
+
   eliminado = 0;
-  
+
   Multa multa(patente, idMulta, f, monto, idAgente, tipoInfraccion, idLocalidad, pagada, eliminado);
   _archivo.guardar(multa);
 }
@@ -54,7 +54,7 @@ void MultaManager::Cargar() {
 void MultaManager::ListarTodos()
 {
   int cantidadRegistros = _archivo.getCantidadRegistros();
-  
+
   for (int i = 0; i<cantidadRegistros; i++)
   {
     Multa reg = _archivo.leer(i);
@@ -69,10 +69,10 @@ void MultaManager::ListarTodos()
 void MultaManager::ListarXId()
 {
   int id;
-  
+
   cout << "Ingrese el ID: ";
   cin >> id;
-  
+
   int posicion = _archivo.buscar(id);
   if (posicion >= 0)
   {
@@ -95,6 +95,7 @@ void MultaManager::Listar(Multa multa) {
   cout << "Tipo Infraccion: " << multa.getTipoInfraccion() << "\n";
   cout << "ID Localidad: " << multa.getIDLocalidad() << "\n";
   cout << "Pagada: " << multa.getPagada() << "\n";
+  cout << "______________________________________________"<<endl;
 }
 
 bool MultaManager::ExisteId(int id)
@@ -110,12 +111,12 @@ int MultaManager::GenerarId()
 void MultaManager::HacerCopiaDeSeguridad(){
   int cantidadRegistros = _archivo.getCantidadRegistros();
   Multa *vec = new Multa[cantidadRegistros];
-  
+
   if (vec == nullptr){
     cout << "Falla al realizar backup" << endl;
     return;
   }
-  
+
   _archivo.leer(vec, cantidadRegistros);
   _archivoBkp.vaciar();
   if (_archivoBkp.guardar(vec, cantidadRegistros)){
@@ -124,20 +125,20 @@ void MultaManager::HacerCopiaDeSeguridad(){
   else{
     cout << "Falla al realizar backup" << endl;
   }
-  
+
   delete []vec;
 }
 
 void MultaManager::RestaurarCopiaDeSeguridad(){
-  
+
   int cantidadRegistros = _archivoBkp.getCantidadRegistros();
   Multa *vec = new Multa[cantidadRegistros];
-  
+
   if (vec == nullptr){
     cout << "Falla al restaurar backup" << endl;
     return;
   }
-  
+
   _archivoBkp.leer(vec, cantidadRegistros);
   _archivo.vaciar();
   if (_archivo.guardar(vec, cantidadRegistros)){
@@ -146,8 +147,8 @@ void MultaManager::RestaurarCopiaDeSeguridad(){
   else{
     cout << "Falla al restaurar backup" << endl;
   }
-  
+
   delete []vec;
-  
-  
+
+
 }
