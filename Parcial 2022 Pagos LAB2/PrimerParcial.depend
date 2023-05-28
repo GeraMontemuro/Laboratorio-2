@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1665086500 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\estudiante.cpp
+	<cstring>
+	<iostream>
+	"Estudiante.h"
+
+1665687005 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\estudiante.h
+	<string>
+	"Fecha.h"
+
+1665086511 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\fecha.h
+	<string>
+
+1665686851 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\estudiantesarchivo.cpp
+	"EstudiantesArchivo.h"
+
+1665686839 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\estudiantesarchivo.h
+	"Estudiante.h"
+
+1652994026 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\fecha.cpp
+	"fecha.h"
+	<ctime>
+
+1685315298 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\modeloparcial.cpp
+	<iostream>
+	<cstring>
+	"ModeloParcial.h"
+
+1685311236 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\modeloparcial.h
+	"Estudiante.h"
+	"EstudiantesArchivo.h"
+	"Pago.h"
+	"PagosArchivo.h"
+
+1665688066 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\pago.h
+	"Fecha.h"
+
+1665687017 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\pagosarchivo.h
+	"Pago.h"
+
+1665688085 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\pago.cpp
+	"Pago.h"
+
+1665686938 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\pagosarchivo.cpp
+	"PagosArchivo.h"
+
+1685311247 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\modelo de parcial 2023\parcial 2022 pagos\main.cpp
+	<iostream>
+	"ModeloParcial.h"
+
