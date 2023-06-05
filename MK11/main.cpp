@@ -16,9 +16,12 @@ int main()
         sf::Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed)
-                window.close();
+          if (event.type == sf::Event::Closed)
+          window.close();
         }
+
+
+
 
         GP.cmd();
         GP.update();

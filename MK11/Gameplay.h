@@ -6,14 +6,11 @@
 
 class Gameplay
 {
-  /*
-
-
-
-  */
   Trompo1 P1;
   Trompo2 P2;
 
+  private:
+  bool colision(Trompo t1, Trompo t2);
 
   public:
     void cmd();

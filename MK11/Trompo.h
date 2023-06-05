@@ -25,6 +25,9 @@ class Trompo
   void update();//SETEAR GIRO DEL TROMPO.
   void setPosition(float x, float y);
   void draw(sf::RenderWindow& window);
+  sf::Sprite getSprite();
+  void Rebotar(sf::Vector2f direccion);
+  sf::Vector2f getDireccion();
 
 
 };

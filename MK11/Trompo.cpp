@@ -25,3 +25,17 @@
 
     window.draw(_sprite);
   }
+
+ sf::Sprite Trompo::getSprite(){
+    return _sprite;
+  }
+
+  void Trompo::Rebotar(sf::Vector2f direccion){
+
+    direccion*=10.f;
+    _sprite.move(direccion);
+
+  }
+  sf::Vector2f Trompo::getDireccion(){
+  return _direccion;
+  }
